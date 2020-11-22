@@ -1,7 +1,7 @@
 function Home() {
     return (
         <div className="container">
-            <p>This is main</p>
+            <p>This is wip</p>
         </div>
     )
 }
