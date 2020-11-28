@@ -59,6 +59,9 @@
     align-content: center;
     color: teal;
 }
+.presentation > div > div > a:last-of-type:hover {
+    background-color: teal;
+}
 .presentation > img {
     margin-top: 50px;
     margin-right: 25px;
