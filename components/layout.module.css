@@ -74,7 +74,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height: 18%;
+    margin-top: 26px;
 }
 .header > nav {
     display: flex;
@@ -105,9 +105,9 @@
 .information_list_container > li > a:hover {
     color: royalblue;
 }
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 950px) {
     .presentation {
-        margin-top: 10px;
+        margin-top: 50px;
         justify-content: center;
     }
 }
