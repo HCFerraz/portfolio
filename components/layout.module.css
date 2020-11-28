@@ -131,14 +131,3 @@
         min-width: 200px;
     }
 }
-/* @media only screen and (max-width: 900px) {
-    .presentation {
-        flex-wrap: wrap
-    }
-    .presentation > div {
-        flex: 1 0 auto;
-    }
-    .presentation > img {
-        flex: 1 0 auto;
-    }
-} */
