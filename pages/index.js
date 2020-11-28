@@ -30,7 +30,7 @@ export default function Home() {
                         <a href="www.google.com" target="_blank">Github</a>
                     </div>
                 </div>
-                <img src="/images/web_developer.svg" alt="Web Developer" width="500px" />
+                <img src="/images/web_developer.svg" alt="Web Developer" />
             </div>
         </div>
     )

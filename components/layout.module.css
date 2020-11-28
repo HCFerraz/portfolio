@@ -6,12 +6,14 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
 }
 .presentation > div {
     flex: 1;
     justify-items: start;
     display: grid;
     align-content: center;
+    min-width: 400px;
 }
 .presentation > div > h1 {
     font-size: 2.2em;
@@ -66,6 +68,8 @@
     margin-top: 50px;
     margin-right: 25px;
     flex: 1;
+    min-width: 400px;
+    max-width: 500px;
 }
 .header {
     display: flex;
@@ -101,3 +105,24 @@
 .information_list_container > li > a:hover {
     color: royalblue;
 }
+@media only screen and (max-width: 975px) {
+    .presentation {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .presentation > img {
+        min-width: 200px;
+    }
+}
+/* @media only screen and (max-width: 900px) {
+    .presentation {
+        flex-wrap: wrap
+    }
+    .presentation > div {
+        flex: 1 0 auto;
+    }
+    .presentation > img {
+        flex: 1 0 auto;
+    }
+} */
