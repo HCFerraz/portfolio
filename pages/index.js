@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import styles from '../components/layout.module.css'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
+    const size = useWindowSize()
     return (
         <div className={styles.content_container}>
             <Head>
                 <title>Henrique Cabral Ferraz</title>
-                <link rel="preconnect" href="https://fonts.gstatic.com" /> 
-                <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet" /> 
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet" />
             </Head>
             <div className={styles.header}>
                 <img src="/images/code.svg" alt="Coding..." width="120px" />
@@ -30,8 +32,33 @@ export default function Home() {
                         <a href="www.google.com" target="_blank">Github</a>
                     </div>
                 </div>
-                <img src="/images/web_developer.svg" alt="Web Developer" width="500px" />
+                {size.width && size.width >= '949' ? <img src="/images/web_developer.svg" alt="Web Developer" /> : <img src="/images/web_devices.svg" alt="Web Devices" />}
+                {/* <img src="/images/web_developer.svg" alt="Web Developer" /> */}
             </div>
         </div>
     )
+}
+function useWindowSize() {
+    const [windowSize, setWindowSize] = useState({
+        width: undefined,
+        height: undefined
+    })
+
+    useEffect(() => {
+        if(typeof window !== 'undefined') {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                })
+            }
+            window.addEventListener("resize", handleResize)
+
+            handleResize()
+
+            return () => window.removeEventListener("resize", handleResize)
+        }
+
+    }, [])
+    return windowSize
 }
