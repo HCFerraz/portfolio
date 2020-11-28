@@ -1,6 +1,7 @@
 .content_container {
-    margin: 0 6.5%;
     height: 100vh;
+    margin-right: 3.4%;
+    margin-left: 6.68%;
 }
 .presentation {
     display: flex;
@@ -73,7 +74,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height: 18%;
+    margin-top: 26px;
 }
 .header > nav {
     display: flex;
@@ -104,9 +105,9 @@
 .information_list_container > li > a:hover {
     color: royalblue;
 }
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 950px) {
     .presentation {
-        margin-top: 10px;
+        margin-top: 50px;
         justify-content: center;
     }
 }
@@ -131,14 +132,8 @@
         min-width: 200px;
     }
 }
-/* @media only screen and (max-width: 900px) {
-    .presentation {
-        flex-wrap: wrap
-    }
-    .presentation > div {
-        flex: 1 0 auto;
-    }
-    .presentation > img {
-        flex: 1 0 auto;
+/* @media only screen and (max-width: 1250px) {
+    .content_container {
+        margin: 0 6.5%;
     }
 } */

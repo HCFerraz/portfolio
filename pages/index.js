@@ -33,7 +33,6 @@ export default function Home() {
                     </div>
                 </div>
                 {size.width && size.width >= '949' ? <img src="/images/web_developer.svg" alt="Web Developer" /> : <img src="/images/web_devices.svg" alt="Web Devices" />}
-                {/* <img src="/images/web_developer.svg" alt="Web Developer" /> */}
             </div>
         </div>
     )
