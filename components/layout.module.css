@@ -37,8 +37,9 @@
     margin-top: 10px;
 }
 .presentation > div > div > a:first-of-type {
-    background-color: #4987B2;
-    border: 2px solid #4987B2;
+    background-color: #1e9791;
+    /* background-color: #4987B2; */
+    border: 2px solid #1e8b86;
     border-radius: 12px;
     padding: 5px 10px;
     font-size: 0.9em;
@@ -52,7 +53,7 @@
     transition: 0.5s;
 }
 .presentation > div > div > a:last-of-type {
-    border: 2px solid #2F2E41;
+    border: 2px solid teal;
     border-radius: 12px;
     padding: 5px 10px;
     font-size: 0.9em;
@@ -61,17 +62,18 @@
     text-align: center;
     display: grid;
     align-content: center;
-    color: #000000;
+    color: #1e9791;
     transition: 0.5s;
 }
 .presentation > div > div > a:last-of-type:hover {
-    background-color: #4987B2;
+    background-color: teal;
+    border: 2px solid teal;
     color: #FFFFFF;
 }
 .presentation > div > div > a:first-of-type:hover {
-    border: 2px solid #2F2E41;
+    border: 2px solid teal;
     background: none;
-    color: #000000;
+    color: teal;
 }
 .presentation > img {
     margin-top: 50px;
@@ -107,7 +109,7 @@
     align-items: center;
 }
 .information_list_container > li:last-of-type {
-    background-color: #4987B2;
+    background-color: #4169E1;
     border-radius: 16px;
     cursor: pointer;
 }

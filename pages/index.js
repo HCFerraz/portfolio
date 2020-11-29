@@ -29,7 +29,7 @@ export default function Home() {
                     <p>Desenvolvimento de páginas estáticas, SPA, criação e consumo de APIs, e muito mais... </p>
                     <div>
                         <a href="#">Portfolio</a>
-                        <a href="www.google.com" target="_blank">Github</a>
+                        <a href="https://github.com/HCFerraz" target="_blank">Github</a>
                     </div>
                 </div>
                 {size.width && size.width > '1024' ? <img src="/images/web_developer.svg" alt="Web Developer" /> : <img src="/images/web_devices.svg" alt="Web Devices" />}
