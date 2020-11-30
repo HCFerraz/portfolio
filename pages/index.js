@@ -26,13 +26,13 @@ export default function Home() {
                 <div>
                     <h1>Henrique Cabral Ferraz</h1>
                     <h2>Front-End Developer & Back End Enthusiastic</h2>
-                    <p>Desenvolvimento de páginas estáticas, spas, criação e consumo de apis, e muito mais... </p>
+                    <p>Desenvolvimento de páginas estáticas, SPA, criação e consumo de APIs, e muito mais... </p>
                     <div>
                         <a href="#">Portfolio</a>
-                        <a href="www.google.com" target="_blank">Github</a>
+                        <a href="https://github.com/HCFerraz" target="_blank">Github</a>
                     </div>
                 </div>
-                {size.width && size.width >= '949' ? <img src="/images/web_developer.svg" alt="Web Developer" /> : <img src="/images/web_devices.svg" alt="Web Devices" />}
+                {size.width && size.width > '1024' ? <img src="/images/web_developer.svg" alt="Web Developer" /> : <img src="/images/web_devices.svg" alt="Web Devices" />}
             </div>
         </div>
     )

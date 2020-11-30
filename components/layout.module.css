@@ -37,7 +37,9 @@
     margin-top: 10px;
 }
 .presentation > div > div > a:first-of-type {
-    background-color: teal;
+    background-color: #1e9791;
+    /* background-color: #4987B2; */
+    border: 2px solid #1e8b86;
     border-radius: 12px;
     padding: 5px 10px;
     font-size: 0.9em;
@@ -48,6 +50,7 @@
     align-content: center;
     color: #FFFFFF;
     margin-right: 10px;
+    transition: 0.5s;
 }
 .presentation > div > div > a:last-of-type {
     border: 2px solid teal;
@@ -59,10 +62,18 @@
     text-align: center;
     display: grid;
     align-content: center;
-    color: teal;
+    color: #1e9791;
+    transition: 0.5s;
 }
 .presentation > div > div > a:last-of-type:hover {
     background-color: teal;
+    border: 2px solid teal;
+    color: #FFFFFF;
+}
+.presentation > div > div > a:first-of-type:hover {
+    border: 2px solid teal;
+    background: none;
+    color: teal;
 }
 .presentation > img {
     margin-top: 50px;
@@ -98,20 +109,24 @@
     align-items: center;
 }
 .information_list_container > li:last-of-type {
-    background-color: royalblue;
+    background-color: #4169E1;
     border-radius: 16px;
     cursor: pointer;
 }
 .information_list_container > li > a:hover {
-    color: royalblue;
+    color: #4987B2;
 }
-@media only screen and (max-width: 950px) {
+.information_list_container > li:last-of-type > a:hover {
+    color: #F5F5F5;
+}
+
+@media only screen and (max-width: 1024px) {
     .presentation {
         margin-top: 50px;
         justify-content: center;
     }
 }
-@media only screen and (max-width: 948px) {
+@media only screen and (max-width: 917px) {
     .presentation > div > h1{
         justify-self: center;
     }
@@ -132,8 +147,3 @@
         min-width: 200px;
     }
 }
-/* @media only screen and (max-width: 1250px) {
-    .content_container {
-        margin: 0 6.5%;
-    }
-} */
