@@ -1,44 +1,79 @@
 .content_container {
-    height: 100vh;
     margin-right: 3.4%;
     margin-left: 6.68%;
 }
-.presentation {
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+.header_container > nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+}
+.navigation_list_container {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation_list_container > li {
+    font-size: 0.8em;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navigation_list_container > li:last-of-type {
+    background-color: #4169E1;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.navigation_list_container > li:last-of-type > a:hover {
+    color: #F5F5F5;
+}
+.navigation_list_container > li > a:hover {
+    color: #4987B2;
+}
+.presentation_container {
     display: flex;
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
 }
-.presentation > div {
+.information_container {
     flex: 1;
     display: grid;
     align-content: center;
     min-width: 400px;
 }
-.presentation > div > h1 {
+.information_container > h1 {
     font-size: 2.2em;
     padding-bottom: 15px;
     font-family: 'Sansita Swashed', cursive;
     margin-left: -2px;
 }
-.presentation > div > h2 {
+.information_container > h2 {
     text-transform: uppercase;
     padding-bottom: 10px;
     color: darkslategrey;
 }
-.presentation > div > p {
+.information_container > p {
     padding-bottom: 10px;
     width: 90%;
     margin-top: 10px;
 }
-.presentation > div > div {
+.buttons_container {
     display: flex;
     padding-bottom: 10px;
     margin-top: 10px;
 }
-.presentation > div > div > a:first-of-type {
+.buttons_container > a:first-of-type {
     background-color: #1e9791;
-    /* background-color: #4987B2; */
     border: 2px solid #1e8b86;
     border-radius: 12px;
     padding: 5px 10px;
@@ -52,8 +87,13 @@
     margin-right: 10px;
     transition: 0.5s;
 }
-.presentation > div > div > a:last-of-type {
-    border: 2px solid teal;
+.buttons_container > a:first-of-type:hover {
+    border: 2px solid #1e9791;
+    background: none;
+    color: teal;
+}
+.buttons_container > a:last-of-type {
+    border: 2px solid #1e9791;
     border-radius: 12px;
     padding: 5px 10px;
     font-size: 0.9em;
@@ -65,85 +105,42 @@
     color: #1e9791;
     transition: 0.5s;
 }
-.presentation > div > div > a:last-of-type:hover {
+.buttons_container > a:last-of-type:hover {
     background-color: teal;
     border: 2px solid teal;
     color: #FFFFFF;
 }
-.presentation > div > div > a:first-of-type:hover {
-    border: 2px solid teal;
-    background: none;
-    color: teal;
-}
-.presentation > img {
+.presentation_container > img {
     margin-top: 50px;
     margin-right: 25px;
     flex: 1;
     min-width: 400px;
     max-width: 500px;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 26px;
-}
-.header > nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 500px;
-}
-.information_list_container {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.information_list_container > li {
-    font-size: 0.8em;
-    height: 40px;
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.information_list_container > li:last-of-type {
-    background-color: #4169E1;
-    border-radius: 16px;
-    cursor: pointer;
-}
-.information_list_container > li > a:hover {
-    color: #4987B2;
-}
-.information_list_container > li:last-of-type > a:hover {
-    color: #F5F5F5;
-}
-
 @media only screen and (max-width: 1024px) {
-    .presentation {
+    .presentation_container {
         margin-top: 50px;
         justify-content: center;
     }
 }
 @media only screen and (max-width: 917px) {
-    .presentation > div > h1{
+    .information_container > h1{
         justify-self: center;
     }
-    .presentation > div > h2 {
+    .information_container > h2 {
         justify-self: center;
     }
-    .presentation > div > p {
+    .information_container > p {
         justify-self: center;
         text-align: center;
         width: 50%;
     }
-    .presentation > div > div {
+    .buttons_container {
         justify-self: center;
     }
 }
 @media only screen and (max-width: 500px) {
-    .presentation > img {
+    .presentation_container > img {
         min-width: 200px;
     }
 }
