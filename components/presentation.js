@@ -1,5 +1,13 @@
-// import styles from './presentation.module.css'
+import styled from 'styled-components'
 
-// export default function Layout({ children }) {
-//     return <div className={styles.container}>{children}</div>
-// }
+const Paragraph = styled.p`
+    background-color: violet;
+`
+
+export default function Compon() {
+    return (
+        <div>
+            <Paragraph>This is a component</Paragraph>
+        </div>
+    )
+}

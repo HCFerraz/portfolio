@@ -1,5 +1,5 @@
 .content_container {
-    margin-right: 3.4%;
+    margin-right: 6.68%;
     margin-left: 6.68%;
 }
 .header_container {
@@ -56,6 +56,7 @@
     padding-bottom: 15px;
     font-family: 'Sansita Swashed', cursive;
     margin-left: -2px;
+    color: #282830;
 }
 .information_container > h2 {
     text-transform: uppercase;
@@ -115,7 +116,7 @@
     margin-right: 25px;
     flex: 1;
     min-width: 400px;
-    max-width: 500px;
+    max-width: 500px; 
 }
 @media only screen and (max-width: 1024px) {
     .presentation_container {
@@ -124,6 +125,9 @@
     }
 }
 @media only screen and (max-width: 917px) {
+    .content_container {
+        font-size: larger;
+    }
     .information_container > h1{
         justify-self: center;
     }

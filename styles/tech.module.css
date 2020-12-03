@@ -1,12 +1,13 @@
 .content_container {    
     margin-top: 100px;
-    margin-right: 3.4%;
+    margin-right: 6.68%;
     margin-left: 6.68%;
 }
 .content_container > h1 {
     font-weight: 600;
     font-size: 1.4em;
     font-family: Arial, Helvetica, sans-serif;
+    color: #282830;
 }
 .content_container > h1::before {
     content: "";
@@ -25,4 +26,9 @@
 .content_container > div > img {
     min-width: 300px;
     max-width: 400px;
+}
+@media only screen and (max-width: 920px) {
+    .content_container {
+        margin-top: 50px;
+    }
 }
