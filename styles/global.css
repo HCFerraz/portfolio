@@ -2,9 +2,9 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: Impact, Charcoal, sans-serif;
     line-height: 1.2;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
     background-color: #EEEEFF;
     height: 100vh;
     min-width: fit-content;

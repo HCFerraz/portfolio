@@ -40,7 +40,7 @@
     font-size: 0.9em;
     margin: 10px 0 10px 0;
 }
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 1185px) {
     .presentation_container {
         max-width: 100%;
     }
