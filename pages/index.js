@@ -105,7 +105,7 @@ export default function Home() {
                         </Player>
                         <div className={portfolio.description_wrapper}>
                             <h2>Netflix - Landing Page</h2>
-                            <p>Clone da página de apresentação da Netflix feito com React JS</p>
+                            <p>Clone da página de apresentação da Netflix feito com React JS <br /><span style={{ fontSize: ".8em"}}>* Não responsivo</span></p>
                             <div className={portfolio.button_wrapper}>
                                 <a href="https://nflix-clone.herokuapp.com" target="_blank">Live Demo</a>
                                 <a href="https://github.com/HCFerraz/netflix-clone" target="_blank">Github Repo</a>
@@ -122,6 +122,19 @@ export default function Home() {
                             <div className={portfolio.button_wrapper}>
                                 <a href="https://hcferraz.github.io/pokedex/" target="_blank">Live Demo</a>
                                 <a href="https://github.com/HCFerraz/pokedex-clone-react" target="_blank">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <Player src="/videos/Apple_Video.mp4" muted autoPlay loop fluid>
+                            <ControlBar disableCompletely />
+                        </Player>
+                        <div className={portfolio.description_wrapper}>
+                            <h2>Apple - Landing Page Brasil</h2>
+                            <p>Clone em Next JS da página de apresentação da Apple.</p>
+                            <div className={portfolio.button_wrapper}>
+                                <a href="https://apple-clone-gold.vercel.app/" target="_blank">Live Demo</a>
+                                <a href="https://github.com/HCFerraz/apple-clone" target="_blank">Github Repo</a>
                             </div>
                         </div>
                     </div>
